@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Luas & Keliling Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <div class="calculator-container">
+            <h2>Kalkulator Luas & Keliling Persegi</h2>
+            <div class="persegi-abcd"></div>
+        <img src="assets/persegi-abcd.jpg" alt="persegi-abcd">
+
+        <p id="formula">
+            <strong>Rumus</strong>
+            <br>
+            Luas = sisi x sisi
+            <br>
+            Keliling = 4 x sisi
+        </p>
+        
+        <label for="sideLength">Panjang Sisi:
+        <input type="number" id="sideLength" placeholder="Masukkan panjang sisi">
+        <button onclick="calculate()">Hitung</button>
+        <button onclick="reset()">Reset</button>
+
+        <div class="result-container">
+            <table id="result-table">
+                <tr>
+                    <th>Keterangan</th>
+                    <th>Rumus</th>
+                    <th>Hasil</th>
+                </tr>
+                <tr>
+                    <td id="calculation">Luas</td>
+                    <td id="formula-area"></td>
+                    <td id="area">-</td>
+                </tr>
+                <tr>
+                    <td id="calculation">Keliling</td>
+                    <td id="formula-perimeter"></td>
+                    <td id="perimeter">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
